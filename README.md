@@ -1,5 +1,5 @@
 # Prisoner-s-Dilemma-Project-Group-12
-This project aims to simulate a iterated prisoner's dilemma in Python. 
+This project aims to simulate an iterated prisoner's dilemma problem in Python. 
 
 # Final Projects for Laboratory of Computational Physics
 
