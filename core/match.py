@@ -10,6 +10,12 @@ class Match:
         self.history_b = []
         self.score_a = 0
         self.score_b = 0
+
+        # Liste per l'analisi dettagliata del match
+        self.payoffs_a = []
+        self.payoffs_b = []
+        self.cumulative_scores_a = []
+        self.cumulative_scores_b = []
     
     def play_round(self):
 
@@ -28,6 +34,12 @@ class Match:
         # Aggiorna i parametri del match
         self.score_a += payoff_a
         self.score_b += payoff_b
+
+        # Aggiorna le liste per l'analisi dettagliata
+        self.payoffs_a.append(payoff_a)
+        self.payoffs_b.append(payoff_b)
+        self.cumulative_scores_a.append(self.score_a)
+        self.cumulative_scores_b.append(self.score_b)
         
         return (move_a,move_b,self.score_a,self.score_b)
 
@@ -41,5 +53,9 @@ class Match:
             "score_a": self.score_a,
             "score_b": self.score_b,
             "history_a": self.history_a,
-            "history_b": self.history_b
+            "history_b": self.history_b,
+            "payoffs_a": self.payoffs_a,
+            "payoffs_b": self.payoffs_b,
+            "cumulative_scores_a": self.cumulative_scores_a,
+            "cumulative_scores_b": self.cumulative_scores_b
         }

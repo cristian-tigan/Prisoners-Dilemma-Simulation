@@ -12,4 +12,6 @@ Punto 2- Iniziata implementazione logica di RoundRobin nel notebook 1vs1.ipynb. 
 
 ### 31/01
 
-Implementata classe Round Robin per gestione dei tornei. Segue: Miglioro il return del metodo run della classe match. Attualmente restituisce un dizionario che contiene: Nome dei player nel match, storico delle loro mosse, punteggi finali. Per l'analisi possono servire gli score cumulativi e i payoff del singolo round. Progetto implementazione (questa modifica non coinvolgerà nessuno degli altri moduli)
+Implementata classe Round Robin per gestione dei tornei. Segue: Miglioro il return del metodo run della classe match. Attualmente restituisce un dizionario che contiene: Nome dei player nel match, storico delle loro mosse, punteggi finali. Per l'analisi possono servire gli score cumulativi e i payoff del singolo round. Progetto implementazione (questa modifica non coinvolgerà nessuno degli altri moduli).
+
+Implementato miglioramento del dizionario results in match.run() . NOTA: i dfs creati in roundrobin sono ottenuti da results. Results contiene tutti i dati necessari per l'analisi.

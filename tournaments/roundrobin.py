@@ -70,7 +70,11 @@ class RoundRobinTournament:
             
             # Se vuoi vedere il dettaglio round per round:
             df = pd.DataFrame({
-                result['agent_a']: result['history_a'], 
-                result['agent_b']: result['history_b']
+                f"{result['agent_a']} (Move)": result['history_a'], 
+                f"{result['agent_b']} (Move)": result['history_b'],
+                f"{result['agent_a']} (Payoff)": result['payoffs_a'],
+                f"{result['agent_b']} (Payoff)": result['payoffs_b'],
+                f"{result['agent_a']} (Cum. Score)": result['cumulative_scores_a'],
+                f"{result['agent_b']} (Cum. Score)": result['cumulative_scores_b']
             })
             self.dfs.append(df)
