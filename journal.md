@@ -9,3 +9,7 @@ Creato lo scheletro base e creata documentazione esplicativa (implementation pla
 ### 30/01 - Fede,Giù
 
 Punto 2- Iniziata implementazione logica di RoundRobin nel notebook 1vs1.ipynb. Segue implementazione della logica della classe per punti successivi.
+
+### 31/01
+
+Implementata classe Round Robin per gestione dei tornei. Segue: Miglioro il return del metodo run della classe match. Attualmente restituisce un dizionario che contiene: Nome dei player nel match, storico delle loro mosse, punteggi finali. Per l'analisi possono servire gli score cumulativi e i payoff del singolo round. Progetto implementazione (questa modifica non coinvolgerà nessuno degli altri moduli)
