@@ -1,4 +1,7 @@
-# Byte-compiled / cache
+
 __pycache__/
 *.py[cod]
 *.pyo
+
+anaconda_projects/
+.ipynb_checkpoints/
