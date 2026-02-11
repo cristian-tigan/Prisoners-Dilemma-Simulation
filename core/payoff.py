@@ -1,5 +1,17 @@
 class PayoffMatrix:
     def __init__(self, T=5, R=3, P=1, S=0):
+
+        if not (T > R > P > S):
+            raise ValueError(
+            f"Use values to satisfy T > R > P > S. "
+            f"Ricevuto: T={T}, R={R}, P={P}, S={S}"
+        )
+
+        if not (2 * R > T + S):
+            raise ValueError(
+                f"Use values to satisfy : 2R > T + S. "
+                f"Ricevuto: 2R={2*R}, T+S={T+S} (T={T}, R={R}, S={S})"
+            )
         self.T = T
         self.R = R
         self.P = P
